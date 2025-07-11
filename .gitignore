@@ -1,0 +1,9 @@
+fonts/*
+build/*
+dist/*
+*.spec
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
