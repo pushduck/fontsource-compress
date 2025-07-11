@@ -32,6 +32,9 @@ jobs:
       - name: Build application with PyInstaller
         run: python setup.py
 
+      - name: Rename EXE for release
+        run: mv dist/*.exe dist/font-thin-${{ github.ref_name }}.exe
+
       - name: Create Release and Upload EXE
         uses: softprops/action-gh-release@v2
         with:
